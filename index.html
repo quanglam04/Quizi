@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/292143817_937845860949470_3885495124358303730_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=pKe7Q3l4ZtEQ7kNvgHrNGgn&_nc_ht=scontent.fhan2-5.fna&oh=00_AYBtUhB3ixHKc4jy-J_smevzotTJ6WUev9e11iaj7g-YSg&oe=66AD7F42" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quizzi App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen  ">
+            <h1 class="heading">Quizzi App</h1>
+            <div class="settings">
+                <label for="num-questions">Number of Questions</label>
+                <select name="" id="num-questions">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                </select>
+
+                <label for="category">Select category</label>
+                <select name="" id="category">
+                    <option value="">any category</option>
+                    <option value="9">general knowledge</option>
+                    <option value="10">books</option>
+                    <option value="11">films</option>
+                    <option value="12">music</option>
+                    <option value="13">television</option>
+                    <option value="14">video games</option>
+                    <option value="15">board games</option>
+                    <option value="16">science and nature</option>
+                    <option value="17">computers</option>
+                    <option value="18">mythology</option>
+                    <option value="19">sports</option>
+                    <option value="20">geography</option>
+                    <option value="21">sports</option>
+                    <option value="22">history</option>
+                    <option value="23">politics</option>
+                    <option value="24">art</option>
+                    <option value="25">vehicles</option>
+ 
+                    
+                </select>
+
+                <label for="difficulty">Select difficulty </label>
+                <select name="" id="difficulty">
+                    <option value="">any difficulty</option>
+                    <option value="">easy</option>
+                    <option value="">medium</option>
+                    <option value="">hard</option>
+                </select>
+
+                <label for="time">Select time per question </label>
+                <select name="" id="time">
+                    <option value="10">10 seconds</option>
+                    <option value="15">15 seconds</option>
+                    <option value="20">20 seconds</option>
+                    <option value="25">25 seconds</option>
+                    <option value="30">30 seconds</option>
+                    <option value="60">60 seconds</option>
+                </select>
+
+            </div>
+
+            <button class="btn start"> Start quizzi</button>
+        </div>
+
+        <div class="quiz hide ">
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">50</span>
+                </div>
+            </div>
+
+            <div class="question-wrapper">
+                <div class="number">
+                    Question <span class="current">1</span>
+                    <span class="total">/10</span>
+                </div>
+                <div class="question">This is a question</div>
+            </div>
+            <div class="answer-wrapper">
+                <div class="answer selected">
+                    <span class="text">answer</span>
+                    <span class="checkbox">
+                        <span class="icon">v</span>
+                    </span>
+                </div>
+
+                <div class="answer correct">
+                    <span class="text">answer</span>
+                    <span class="checkbox">
+                        <span class="icon">v</span>
+                    </span>
+                </div>
+
+                <div class="answer ">
+                    <span class="text">answer</span>
+                    <span class="checkbox">
+                        <span class="icon">v</span>
+                    </span>
+                </div>
+
+           </div>
+        <button class="btn submit " disabled> Submit</button>
+        <button class="btn next"> Next</button>
+        </div> 
+    <div class="end-screen hide">
+        <h1 class="heading">Quiz App</h1>
+        <div class="score">
+            <span class="score-text">Your Score:</span>
+             <div>
+                <span class="final-score">0</span>
+                <span class="total-score">/10</span>
+
+             </div>   
+             <button class="btn restart">Restart Quizi</button>
+        </div>
+
+    </div>
+  </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
